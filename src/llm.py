@@ -416,6 +416,7 @@ def build_llm(settings: Any) -> LLM:
     if settings.llm_backend == "extractive":
         return ExtractiveLLM()
     key = settings.anthropic_api_key.get_secret_value() if settings.anthropic_api_key else None
+    key = key or None  # an empty ANTHROPIC_API_KEY= line means "not configured"
     return ClaudeLLM(
         model=settings.claude_model,
         effort=settings.claude_effort,
