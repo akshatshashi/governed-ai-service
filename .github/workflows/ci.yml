@@ -70,7 +70,7 @@ jobs:
         run: python -m eval.run_eval --backend extractive --build-index --output eval/results.json
       - name: Upload release evidence
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: eval-results-${{ github.sha }}
           path: eval/results.json
