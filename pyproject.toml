@@ -1,0 +1,24 @@
+[project]
+name = "governed-ai-service"
+version = "0.1.0"
+description = "A RAG + agent service for AML/CTF compliance questions where the controls are the product."
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["data"]
+
+[tool.ruff.lint]
+# E/F: pyflakes + pycodestyle, I: import order, B: bugbear, UP: pyupgrade,
+# S: flake8-bandit security checks (secure-coding gate in CI).
+select = ["E", "F", "I", "B", "UP", "S"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "S105", "S106"]  # asserts and fake secrets are fine in tests
+"eval/*" = ["S101"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]

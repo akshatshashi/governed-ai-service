@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Secrets — never commit credentials
+.env
+.env.*
+!.env.example
+
+# Runtime state (audit trail, approval queue, vector index)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/index/
+
+# Corpus: public source PDFs are downloaded locally, not redistributed.
+# Only the provenance manifest and the synthetic documents we wrote ourselves are committed.
+data/corpus/*
+!data/corpus/MANIFEST.md
+!data/corpus/synthetic/
+
+# Eval scratch output (committed release evidence lives in eval/results/)
+eval/results.json
+eval/*.db
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,42 @@
+# Reference data for the lookup_threshold tool.
+#
+# Compiled for demonstration from public regulator guidance. It is a simplified summary, not legal
+# advice: thresholds, report types and deadlines change, so verify against the regulator before
+# relying on any entry. Reviewed: 2026-09-30.
+countries:
+  AU:
+    name: Australia
+    aliases: [aus]
+    regulator: AUSTRAC
+    summary: >-
+      Threshold transaction reports (TTRs) are required for transfers of physical currency of
+      AUD 10,000 or more (or the foreign currency equivalent), lodged within 10 business days.
+  NZ:
+    name: New Zealand
+    aliases: [nzl, aotearoa]
+    regulator: New Zealand Police Financial Intelligence Unit
+    summary: >-
+      Prescribed transaction reports (PTRs) are required for large cash transactions of
+      NZD 10,000 or more and for international wire transfers of NZD 1,000 or more.
+  US:
+    name: United States
+    aliases: [usa, united states of america, america]
+    regulator: FinCEN
+    summary: >-
+      Currency transaction reports (CTRs) are required for cash transactions of more than
+      USD 10,000 in a single business day, including multiple transactions that aggregate above it.
+  CA:
+    name: Canada
+    aliases: [can]
+    regulator: FINTRAC
+    summary: >-
+      Large cash transaction reports (LCTRs) are required when CAD 10,000 or more in cash is
+      received in a single transaction or in multiple transactions within 24 hours; electronic
+      funds transfers of CAD 10,000 or more into or out of Canada are also reported.
+  GB:
+    name: United Kingdom
+    aliases: [uk, great britain, britain, england]
+    regulator: National Crime Agency (UK Financial Intelligence Unit)
+    summary: >-
+      There is no routine cash-threshold transaction report for banks; reporting is
+      suspicion-based, through Suspicious Activity Reports (SARs).
