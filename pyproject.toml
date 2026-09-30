@@ -1,6 +1,6 @@
 [project]
 name = "governed-ai-service"
-version = "0.1.0"
+version = "1.0.0"
 description = "A RAG + agent service for AML/CTF compliance questions where the controls are the product."
 requires-python = ">=3.11"
 
