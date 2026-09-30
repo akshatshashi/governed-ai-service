@@ -1,0 +1,11 @@
+# Runtime dependencies — pinned exactly so builds are reproducible.
+# torch is pulled in by sentence-transformers; CI and the Dockerfile pre-install the CPU-only wheel.
+fastapi==0.142.1
+uvicorn==0.54.0
+pydantic==2.13.5
+pydantic-settings==2.15.0
+anthropic==1.9.0
+chromadb==1.5.9
+sentence-transformers==6.1.0
+pypdf==6.19.0
+pyyaml==6.0.3
