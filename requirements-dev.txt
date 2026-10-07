@@ -1,5 +1,5 @@
 # Development and CI tooling (not installed in the production image).
 -r requirements.txt
 pytest==9.1.1
-ruff==0.16.9
+ruff==0.16.10
 httpx==0.28.1
